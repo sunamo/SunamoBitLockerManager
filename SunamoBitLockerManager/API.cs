@@ -1,5 +1,4 @@
-namespace SunamoBitLockerManager
-{
+namespace SunamoBitLockerManager;
 
     public partial class BitLockerManager
     {
@@ -128,4 +127,3 @@ namespace SunamoBitLockerManager
             return principal.IsInRole(WindowsBuiltInRole.Administrator);
         }
     }
-}
