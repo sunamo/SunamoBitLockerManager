@@ -1,5 +1,4 @@
-namespace SunamoBitLockerManager
-{
+namespace SunamoBitLockerManager;
 
     public partial class BitLockerManager
     {
@@ -3619,6 +3618,5 @@ namespace SunamoBitLockerManager
             }
         }
     }
-}
 
 #pragma warning restore CA1303 // Do not pass literals as localized parameters

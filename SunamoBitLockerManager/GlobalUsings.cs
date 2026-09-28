@@ -6,3 +6,4 @@ global using System.IO;
 global using System.Management;
 global using System.Reflection;
 global using System.Security.Principal;
+global using SunamoBitLockerManager;

@@ -1,6 +1,6 @@
-using BitLockerManager2 = SunamoBitLockerManager.BitLockerManager;
-
 namespace SunamoBitLockerManager;
+
+using BitLockerManager2 = SunamoBitLockerManager.BitLockerManager;
 
 /// <summary>
 /// Helper pro zjištění, jestli je konkrétní disk uzamčený BitLockerem (dává smysl jen tady,
