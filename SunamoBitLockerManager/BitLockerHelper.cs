@@ -34,9 +34,9 @@ public class BitLockerHelper
                     drives.Add(new Tuple<char, BitLockerManager2>(drive.Name[0], new BitLockerManager2(drive)));
                 }
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                if (ex.Message != "Access denied ")
+                if (exception.Message != "Access denied ")
                 {
                     throw;
                 }
@@ -49,11 +49,11 @@ public class BitLockerHelper
     /// <summary>
     /// Vrátí true, pokud je disk s daným písmenem uzamčený BitLockerem.
     /// </summary>
-    public static bool IsFolderLockedByBitLocker(char ch)
+    public static bool IsFolderLockedByBitLocker(char driveLetter)
     {
         foreach (Tuple<char, BitLockerManager2> item in drives)
         {
-            if (item.Item1 == char.ToUpper(ch))
+            if (item.Item1 == char.ToUpper(driveLetter))
             {
                 return item.Item2.IsLocked();
             }
