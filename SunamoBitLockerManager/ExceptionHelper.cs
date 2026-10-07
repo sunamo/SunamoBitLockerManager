@@ -2,23 +2,23 @@ namespace SunamoBitLockerManager;
 
     public static class ExceptionHelper
     {
-        public static Exception SetCode(this Exception e, int value)
+        public static Exception SetCode(this Exception exception, int value)
         {
             BindingFlags flags = BindingFlags.Instance | BindingFlags.NonPublic;
             FieldInfo fieldInfo = typeof(Exception).GetField("_HResult", flags);
 
-            fieldInfo?.SetValue(e, value);
+            fieldInfo?.SetValue(exception, value);
 
-            return e;
+            return exception;
         }
 
-        public static Exception SetCode(this Exception e, uint value)
+        public static Exception SetCode(this Exception exception, uint value)
         {
             BindingFlags flags = BindingFlags.Instance | BindingFlags.NonPublic;
             FieldInfo fieldInfo = typeof(Exception).GetField("_HResult", flags);
 
-            fieldInfo?.SetValue(e, unchecked((int)value));
+            fieldInfo?.SetValue(exception, unchecked((int)value));
 
-            return e;
+            return exception;
         }
     }
