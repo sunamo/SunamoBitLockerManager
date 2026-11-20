@@ -1,4 +1,3 @@
-// variables names: ok
 namespace RunnerSunamoBitLockerManager;
 
 internal class Program

@@ -1,4 +1,3 @@
-// variables names: ok
 namespace SunamoBitLockerManager.Tests;
 
 public class BitLockerManagerTests
