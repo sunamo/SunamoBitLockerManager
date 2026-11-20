@@ -16,7 +16,7 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-    <Authors>www.sunamo.cz</Authors>
+    <Authors>Roman Minyaylov; www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
     <PackageProjectUrl>https://sunamo.github.io/PlatformIndependentNuGetPackages/SunamoBitLockerManager/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sunamo/SunamoBitLockerManager.git</RepositoryUrl>
