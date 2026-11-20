@@ -3,8 +3,8 @@ namespace SunamoBitLockerManager;
 using BitLockerManager2 = SunamoBitLockerManager.BitLockerManager;
 
 /// <summary>
-/// Helper pro zjištění, jestli je konkrétní disk uzamčený BitLockerem (dává smysl jen tady,
-/// ne v PlatformIndependentNuGetPackages obecně, protože to vyžaduje Windows-only System.Management).
+/// Helper for determining whether a specific drive is locked by BitLocker (makes sense only here,
+/// not in PlatformIndependentNuGetPackages in general, because it requires the Windows-only System.Management).
 /// </summary>
 public class BitLockerHelper
 {
@@ -13,7 +13,7 @@ public class BitLockerHelper
     private static readonly List<Tuple<char, BitLockerManager2>> drives = new List<Tuple<char, BitLockerManager2>>();
 
     /// <summary>
-    /// Načte všechny disky a jejich stav BitLockeru, vrátí funkci pro dotaz na konkrétní disk podle písmene.
+    /// Loads all drives and their BitLocker status, returns a function for querying a specific drive by letter.
     /// </summary>
     public static Func<char, bool> Init()
     {
@@ -47,7 +47,7 @@ public class BitLockerHelper
     }
 
     /// <summary>
-    /// Vrátí true, pokud je disk s daným písmenem uzamčený BitLockerem.
+    /// Returns true if the drive with the given letter is locked by BitLocker.
     /// </summary>
     public static bool IsFolderLockedByBitLocker(char driveLetter)
     {
